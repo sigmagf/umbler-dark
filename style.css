@@ -1,0 +1,80 @@
+@-moz-document url-prefix("https://app.umbler.com/") {
+  :root {
+      --umbler: #557cf2;
+      --alt-background: #464646;
+      --alt-primary: #333;
+      --alt-secondary: #626262;
+      --alt-text: #fff;
+      --alt-hover-text: #dbdbdb;
+      --shaddow: rgba(0, 0, 0, .10);
+  }
+
+
+
+  /* MASTER BACKGROUND */
+  .bg-faded {
+      background: var(--alt-background);
+  }
+
+
+
+  /* CARDS */
+  .card {
+      background: var(--alt-primary);
+      box-shadow: 0 0 4px 4px var(--shaddow);
+  }
+
+
+
+  /* FINANCAS */
+  #financial-information {
+      color: var(--alt-text);
+  }
+
+  .progress[value] {
+      background: var(--alt-secondary);
+  }
+
+  .divider {
+      color: var(--alt-text);
+  }
+
+
+
+  /* SIDE */
+
+  #panelbar-actions > .input-group input,
+  #panelbar-actions > .input-group .input-group-addon {
+      border-color: var(--alt-primary) !important;
+      background: var(--alt-primary) !important;
+      transition: all 250ms ease;
+  }
+
+  #panelbar-actions > .input-group > input:focus,
+  #panelbar-actions > .input-group > input:focus ~ #panelbar-actions > .input-group > .input-group-addon {
+      background: var(--alt-secondary) !important;
+  }
+
+
+  /* NOVO BOTAO */
+  #panelbar-actions > div:nth-child(2) {
+      background: var(--alt-background) !important;
+  }
+
+  /* DOMAINS */
+  ul.nav-domains > li > a > span {
+      color: var(--alt-text);
+  }
+
+  ul.nav-domains > li:hover > a {
+      background: var(--alt-primary) !important;
+  }
+
+  ul.nav-domains > li:hover > *:nth-child(2) {
+      background: none;
+  }
+
+  ul.nav-domains > li:hover > *:nth-child(2) > li > a {
+      background: none;
+  }
+}
